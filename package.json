@@ -1,0 +1,413 @@
+{
+    "author": "mreed",
+    "dependencies": {
+        "pebble-clay": "^1.0.3"
+    },
+    "keywords": [],
+    "name": "hrgrid",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable",
+            "health"
+        ],
+        "displayName": "HRgrid",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "bluetoothvibe",
+            "hourlyvibe",
+            "row2",
+            "WeatherIsFahrenheit",
+            "WeatherTemperature",
+            "WeatherIcon",
+            "JSReady",
+            "row3"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/IMAGE_TROPICAL_STORM",
+                    "name": "IMAGE_TROPICAL_STORM",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_THUNDERSTORMS",
+                    "name": "IMAGE_THUNDERSTORMS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SUNNY",
+                    "name": "IMAGE_SUNNY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SEVERE_THUNDERSTORMS",
+                    "name": "IMAGE_SEVERE_THUNDERSTORMS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_PARTLY_CLOUDY_DAY",
+                    "name": "IMAGE_PARTLY_CLOUDY_DAY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_PARTLY_CLOUDY",
+                    "name": "IMAGE_PARTLY_CLOUDY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_PARTLY_CLOUDY_NIGHT",
+                    "name": "IMAGE_PARTLY_CLOUDY_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_NOT_AVAILABLE",
+                    "name": "IMAGE_NOT_AVAILABLE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_MOSTLY_CLOUDY_NIGHT",
+                    "name": "IMAGE_MOSTLY_CLOUDY_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_MIXED_RAIN_AND_SNOW",
+                    "name": "IMAGE_MIXED_RAIN_AND_SNOW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/week",
+                    "name": "IMAGE_WK",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/heart",
+                    "name": "IMAGE_HEART",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_FAIR_DAY",
+                    "name": "IMAGE_FAIR_DAY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/digitalfont",
+                    "name": "FONT_DIGITALROUND_29",
+                    "targetPlatforms": null,
+                    "trackingAdjust": 2,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/digitalfont",
+                    "name": "FONT_DIGITALROUND_50",
+                    "targetPlatforms": null,
+                    "trackingAdjust": 3,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/digitalfont",
+                    "name": "FONT_DIGITAL_50",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/digitalfont",
+                    "name": "FONT_HR_50",
+                    "targetPlatforms": null,
+                    "trackingAdjust": 9,
+                    "type": "font"
+                },
+                {
+                    "file": "images/IMAGE_HURRICANE",
+                    "name": "IMAGE_HURRICANE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_TORNADO",
+                    "name": "IMAGE_TORNADO",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_MOSTLY_CLOUDY_DAY",
+                    "name": "IMAGE_MOSTLY_CLOUDY_DAY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_FAIR_NIGHT",
+                    "name": "IMAGE_FAIR_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_CLOUDY",
+                    "name": "IMAGE_CLOUDY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_CLEAR_NIGHT",
+                    "name": "IMAGE_CLEAR_NIGHT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_MIXED_RAIN_AND_SLEET",
+                    "name": "IMAGE_MIXED_RAIN_AND_SLEET",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_ISOLATED_THUNDERSHOWERS",
+                    "name": "IMAGE_ISOLATED_THUNDERSHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SNOW_SHOWERS",
+                    "name": "IMAGE_SNOW_SHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_THUNDERSHOWERS",
+                    "name": "IMAGE_THUNDERSHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_HEAVY_SNOW2",
+                    "name": "IMAGE_HEAVY_SNOW2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SCATTERED_SNOW_SHOWERS",
+                    "name": "IMAGE_SCATTERED_SNOW_SHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_HEAVY_SNOW",
+                    "name": "IMAGE_HEAVY_SNOW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SCATTERED_SHOWERS",
+                    "name": "IMAGE_SCATTERED_SHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SCATTERED_THUNDERSTORMS2",
+                    "name": "IMAGE_SCATTERED_THUNDERSTORMS2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SCATTERED_THUNDERSTORMS",
+                    "name": "IMAGE_SCATTERED_THUNDERSTORMS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_ISOLATED_THUNDERSTORMS",
+                    "name": "IMAGE_ISOLATED_THUNDERSTORMS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_HOT",
+                    "name": "IMAGE_HOT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_MIXED_RAIN_AND_HAIL",
+                    "name": "IMAGE_MIXED_RAIN_AND_HAIL",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_COLD",
+                    "name": "IMAGE_COLD",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_WINDY",
+                    "name": "IMAGE_WINDY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_BLUSTERY",
+                    "name": "IMAGE_BLUSTERY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SMOKY",
+                    "name": "IMAGE_SMOKY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_HAZE",
+                    "name": "IMAGE_HAZE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_FOGGY",
+                    "name": "IMAGE_FOGGY",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_DUST",
+                    "name": "IMAGE_DUST",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SLEET",
+                    "name": "IMAGE_SLEET",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_HAIL",
+                    "name": "IMAGE_HAIL",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SNOW",
+                    "name": "IMAGE_SNOW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_BLOWING_SNOW",
+                    "name": "IMAGE_BLOWING_SNOW",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_LIGHT_SNOW_SHOWERS",
+                    "name": "IMAGE_LIGHT_SNOW_SHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SNOW_FLURRIES",
+                    "name": "IMAGE_SNOW_FLURRIES",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SHOWERS2",
+                    "name": "IMAGE_SHOWERS2",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_SHOWERS",
+                    "name": "IMAGE_SHOWERS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_FREEZING_RAIN",
+                    "name": "IMAGE_FREEZING_RAIN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_DRIZZLE",
+                    "name": "IMAGE_DRIZZLE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_FREEZING_DRIZZLE",
+                    "name": "IMAGE_FREEZING_DRIZZLE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/IMAGE_MIXED_SNOW_AND_SLEET",
+                    "name": "IMAGE_MIXED_SNOW_AND_SLEET",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt00",
+                    "name": "IMAGE_BATT_00",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt20",
+                    "name": "IMAGE_BATT_20",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt40",
+                    "name": "IMAGE_BATT_40",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt60",
+                    "name": "IMAGE_BATT_60",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt80",
+                    "name": "IMAGE_BATT_80",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt100",
+                    "name": "IMAGE_BATT_100",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "fbf15cbb-87c5-4b56-b5c3-858a48ae0a0a",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
